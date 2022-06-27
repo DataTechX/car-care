@@ -1,2 +1,5 @@
-# car-care
-project for car wash 
+# โปรเจคบันทึกการเข้าล้างรถ
+> ตัวอย่างการทำงานโค๊ด และ หน้าตาโง่ๆ อัพเดทเร็วๆนี้
+
+![2](https://cdn.discordapp.com/attachments/973666132131217542/991068155130552491/Screenshot_2022-06-27_124638.png)
+![2](https://cdn.discordapp.com/attachments/973666132131217542/991068155357052968/Screenshot_2022-06-27_124648.png)
