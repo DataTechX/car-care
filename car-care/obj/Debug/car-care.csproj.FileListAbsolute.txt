@@ -1,0 +1,10 @@
+D:\car-main-project\car-care\car-care\obj\Debug\car-care.csproj.AssemblyReference.cache
+D:\car-main-project\car-care\car-care\obj\Debug\car_care.Properties.Resources.resources
+D:\car-main-project\car-care\car-care\obj\Debug\car_care.Views.PView.resources
+D:\car-main-project\car-care\car-care\obj\Debug\car-care.csproj.GenerateResource.cache
+D:\car-main-project\car-care\car-care\obj\Debug\car-care.csproj.CoreCompileInputs.cache
+D:\car-main-project\car-care\car-care\bin\Debug\car-care.exe.config
+D:\car-main-project\car-care\car-care\bin\Debug\car-care.exe
+D:\car-main-project\car-care\car-care\bin\Debug\car-care.pdb
+D:\car-main-project\car-care\car-care\obj\Debug\car-care.exe
+D:\car-main-project\car-care\car-care\obj\Debug\car-care.pdb
