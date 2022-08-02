@@ -8,3 +8,14 @@ D:\car-main-project\car-care\car-care\bin\Debug\car-care.exe
 D:\car-main-project\car-care\car-care\bin\Debug\car-care.pdb
 D:\car-main-project\car-care\car-care\obj\Debug\car-care.exe
 D:\car-main-project\car-care\car-care\obj\Debug\car-care.pdb
+C:\Users\SHIBA\Source\Repos\car-care\car-care\bin\Debug\car-care.exe.config
+C:\Users\SHIBA\Source\Repos\car-care\car-care\bin\Debug\car-care.exe
+C:\Users\SHIBA\Source\Repos\car-care\car-care\bin\Debug\car-care.pdb
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car-care.csproj.AssemblyReference.cache
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car-care.csproj.SuggestedBindingRedirects.cache
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car_care.Properties.Resources.resources
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car_care.Views.PView.resources
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car-care.csproj.GenerateResource.cache
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car-care.csproj.CoreCompileInputs.cache
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car-care.exe
+C:\Users\SHIBA\Source\Repos\car-care\car-care\obj\Debug\car-care.pdb

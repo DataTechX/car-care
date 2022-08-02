@@ -81,5 +81,10 @@ namespace car_care.Views
         {
             MessageBox.Show("He LynnHoo My Project Car Care System V1.2", "Alert", MessageBoxButtons.OK);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

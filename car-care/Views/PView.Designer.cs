@@ -29,6 +29,7 @@ namespace car_care.Views
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PView));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.petlist = new System.Windows.Forms.TabControl();
@@ -51,41 +52,46 @@ namespace car_care.Views
             this.txtName = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.petlist.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(13, 10);
+            this.label1.Location = new System.Drawing.Point(293, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(146, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PPPP";
+            this.label1.Text = "ชิบะ คาร์แคร์";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(701, 32);
+            this.panel1.Size = new System.Drawing.Size(707, 68);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // petlist
             // 
             this.petlist.Controls.Add(this.tabPage2);
             this.petlist.Controls.Add(this.tabPage1);
             this.petlist.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.petlist.Location = new System.Drawing.Point(0, 32);
+            this.petlist.Location = new System.Drawing.Point(0, 68);
             this.petlist.Name = "petlist";
             this.petlist.SelectedIndex = 0;
-            this.petlist.Size = new System.Drawing.Size(701, 356);
+            this.petlist.Size = new System.Drawing.Size(707, 355);
             this.petlist.TabIndex = 1;
             // 
             // tabPage2
@@ -101,16 +107,16 @@ namespace car_care.Views
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(693, 330);
+            this.tabPage2.Size = new System.Drawing.Size(699, 329);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "1";
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(15, 27);
+            this.txtSearch.Location = new System.Drawing.Point(18, 30);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(497, 24);
+            this.txtSearch.Size = new System.Drawing.Size(511, 24);
             this.txtSearch.TabIndex = 7;
             // 
             // button4
@@ -119,7 +125,7 @@ namespace car_care.Views
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(594, 190);
+            this.button4.Location = new System.Drawing.Point(596, 221);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 25);
             this.button4.TabIndex = 6;
@@ -132,7 +138,7 @@ namespace car_care.Views
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(594, 149);
+            this.button3.Location = new System.Drawing.Point(596, 180);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 25);
             this.button3.TabIndex = 5;
@@ -145,7 +151,7 @@ namespace car_care.Views
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(594, 107);
+            this.button2.Location = new System.Drawing.Point(596, 138);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 25);
             this.button2.TabIndex = 4;
@@ -158,9 +164,9 @@ namespace car_care.Views
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSearch.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSearch.Location = new System.Drawing.Point(521, 18);
+            this.btnSearch.Location = new System.Drawing.Point(548, 16);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(87, 34);
+            this.btnSearch.Size = new System.Drawing.Size(143, 46);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "ค้นหา";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -171,18 +177,18 @@ namespace car_care.Views
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(20, 3);
+            this.label2.Location = new System.Drawing.Point(222, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 27);
+            this.label2.Size = new System.Drawing.Size(104, 27);
             this.label2.TabIndex = 2;
-            this.label2.Text = "CS";
+            this.label2.Text = "กรองข้อมูล";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.panel2.Location = new System.Drawing.Point(12, 59);
+            this.panel2.Location = new System.Drawing.Point(12, 82);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(580, 263);
+            this.panel2.Size = new System.Drawing.Size(580, 240);
             this.panel2.TabIndex = 0;
             // 
             // tabPage1
@@ -201,7 +207,7 @@ namespace car_care.Views
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(693, 330);
+            this.tabPage1.Size = new System.Drawing.Size(699, 329);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "2";
             // 
@@ -211,7 +217,7 @@ namespace car_care.Views
             this.button6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(261, 250);
+            this.button6.Location = new System.Drawing.Point(420, 238);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(152, 35);
             this.button6.TabIndex = 9;
@@ -220,11 +226,12 @@ namespace car_care.Views
             // 
             // button5
             // 
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.Location = new System.Drawing.Point(47, 250);
+            this.button5.Location = new System.Drawing.Point(125, 238);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(152, 35);
             this.button5.TabIndex = 8;
@@ -236,15 +243,15 @@ namespace car_care.Views
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(313, 94);
+            this.label6.Location = new System.Drawing.Point(447, 118);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 25);
+            this.label6.Size = new System.Drawing.Size(93, 25);
             this.label6.TabIndex = 7;
-            this.label6.Text = "type";
+            this.label6.Text = "ทำอะไรบ้าง";
             // 
             // txtType
             // 
-            this.txtType.Location = new System.Drawing.Point(312, 126);
+            this.txtType.Location = new System.Drawing.Point(379, 156);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(232, 24);
             this.txtType.TabIndex = 6;
@@ -255,16 +262,16 @@ namespace car_care.Views
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(19, 176);
+            this.label5.Location = new System.Drawing.Point(474, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 25);
+            this.label5.Size = new System.Drawing.Size(39, 25);
             this.label5.TabIndex = 5;
-            this.label5.Text = "สี";
+            this.label5.Text = "สีรถ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtColur
             // 
-            this.txtColur.Location = new System.Drawing.Point(18, 208);
+            this.txtColur.Location = new System.Drawing.Point(379, 77);
             this.txtColur.Name = "txtColur";
             this.txtColur.Size = new System.Drawing.Size(232, 24);
             this.txtColur.TabIndex = 4;
@@ -275,15 +282,15 @@ namespace car_care.Views
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(19, 94);
+            this.label4.Location = new System.Drawing.Point(162, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 25);
+            this.label4.Size = new System.Drawing.Size(61, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "ชื่อ";
+            this.label4.Text = "ยี่ห้อรถ";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(18, 126);
+            this.txtName.Location = new System.Drawing.Point(85, 156);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(232, 24);
             this.txtName.TabIndex = 2;
@@ -294,25 +301,35 @@ namespace car_care.Views
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(19, 15);
+            this.label3.Location = new System.Drawing.Point(153, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 25);
+            this.label3.Size = new System.Drawing.Size(90, 25);
             this.label3.TabIndex = 1;
-            this.label3.Text = "ไอดี";
+            this.label3.Text = "ทะเบียนรถ";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(18, 47);
+            this.txtID.Location = new System.Drawing.Point(85, 77);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(232, 24);
             this.txtID.TabIndex = 0;
             this.txtID.Text = "";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(157, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // PView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 388);
+            this.ClientSize = new System.Drawing.Size(707, 423);
             this.Controls.Add(this.petlist);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -325,6 +342,7 @@ namespace car_care.Views
             this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -353,5 +371,6 @@ namespace car_care.Views
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox txtID;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
